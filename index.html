@@ -2,7 +2,7 @@
 <html lang="en" manifest="cache.appcache">
 <head>
   <meta charset="utf-8">
-  <title>Make and Play Udacity 2048</title>
+  <title>Dragon Ball 2048</title>
 
   <link href="style/main.css" rel="stylesheet" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,600,700' rel='stylesheet' type='text/css'>
@@ -25,22 +25,19 @@
 <body>
   <div class="container">
     <div class="heading">
-      <h1 class="title">Make 2048</h1>
+      <h1 class="title">Dragon Ball 2048</h1>
       <div class="scores-container">
         <div class="score-container">0</div>
         <div class="best-container">0</div>
+        <p class="game-intro">
+          <a class="restart-button">Start a New Game</a>
+        </p>
       </div>
-    </div>
+   </div>
 
-    <div class="above-game">
-      <p class="game-intro">
-      <a class="restart-button">New Game</a>
-      Use the arrow keys to slide  tiles. Combine similar tiles to create new ones.</p>
-      
-    </div>
-
+   
     <div class="pre-game">
-      <p class="learn">Learn to make your own version of 2048 in 30 minutes in Udacity's mini online class for beginners.</p><a class="learn" href="https://www.udacity.com/course/ud248">Take the Class!</a>
+      <p class="learn">This is a <b><i>Dragon Ball</b></i> version of the popular game 2048. The game mechanics are the same, however the tiles feature <b>Goku</b> as he progressively achieves stronger transformations. <p>The first tile features Goku in his base form. The second features him as Oozaru - The Great Ape. Further on, he achieves The Super Saiyan form - but that is the tip of the iceberg. As you approach the last tile you can see him grow from strength to strength to achieve a form that no one even knew about...</p></p><p>Can you help Goku reach the pinnacle of Saiyan transformations?</p>
     </div>
 
 
@@ -86,9 +83,12 @@
       </div>
     </div>
 
-
     <p class="game-explanation">
-      <strong class="important">Make your own version:</strong> If you'd like to make your own version of this game, check out Udacity's newest course for beginners <a href="https://www.udacity.com/course/ud248" target="_blank">Make your own 2048</a>. No programming experience is required and in less than half an hour you'll dig into the source code, make some changes, and have your own version of the game to share.
+      <strong> <i style="color:#ccac00">Dragon Ball 2048 </i> </strong> has been created by <a href="https://twitter.com/thisisYashaswi" target="_blank" style="color:#ccac00"> <i>Yashaswi Singh</i> </a>
+    </p>
+    <hr>
+    <p class="game-explanation">
+      <strong class="important">Make your own version:</strong> I was able to make this version of the game using Udacity's course <a href="https://www.udacity.com/course/ud248" target="_blank" style="color:#ffffff">Make your own 2048</a>. You can try it out too!
     </p>
     <hr>
     <p class="game-explanation">
@@ -96,10 +96,12 @@
     </p>
     <hr>
     <p>
-    This is a modified version of the <a href="http://gabrielecirulli.github.io/2048/" target="_blank">original game</a> created by Gabriele Cirulli.
+    This is a modified version of the <a href="http://gabrielecirulli.github.io/2048/" target="_blank" style="color:#ffffff">original game</a> created by Gabriele Cirulli.
     </p>
   </div>
 
+  <script src="js/jquery.js"></script>
+  <script src="js/socket.io.js"></script>
   <script src="js/bind_polyfill.js"></script>
   <script src="js/classlist_polyfill.js"></script>
   <script src="js/animframe_polyfill.js"></script>
